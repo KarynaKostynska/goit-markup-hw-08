@@ -30,6 +30,18 @@ li {
 button {
  cursor: pointer
 }
+.menu {
+    background-color: var(--white);
+}
+.hero {
+ background-color: var(--bgr-black);
+}
+.benefits {
+ background-color: var(--white);
+}
+.team {
+ background-color: var(--bgr);
+}
 
 /* Логотип */
 
@@ -52,7 +64,8 @@ button {
   color: var(--title);
 }
 .activ-element:hover,
-.activ-element:focus {
+.activ-element:focus,
+.current {
   color: var(--accents);
 }
 
