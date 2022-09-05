@@ -7,121 +7,143 @@
 */
 
 :root {
-    --headlines:#000000;
-    --maintext:#757575;
-    --accents:#2196F3;
-    --white:#FFFFFF;
-    --bgr:#F5F4FA;
-    --title: #212121;
+  --headlines: #000000;
+  --maintext: #757575;
+  --accents: #2196f3;
+  --white: #ffffff;
+  --bgr: #f5f4fa;
+  --bgr-black: #2f303a;
+  --title: #212121;
 }
-
 body {
-    font-family: 'Roboto',sans-serif;
-    letter-spacing: 0.03em;
-    line-height: 1.1;
+  font-family: "Roboto", sans-serif;
+  letter-spacing: 0.03em;
+  line-height: 1.1;
+  color: var(--title);
 }
-a, li {  
-text-decoration: none;
-list-style: none;
+a {
+  text-decoration: none;
 }
-/* Логотип */
-.logo {
-font-family: 'Raleway',cursive;
-font-style: 400;
-font-weight: 700;
-font-size: 26px;
-text-decoration: none;
-color: var(--accents); 
- }
- .logo-part {
-    color: var(--headlines);
- }
-/* Навігація */
- .nav-link {
-    font-weight: 500;
-    font-size: 14px;
-    letter-spacing: 0.02em;
-    color: var(--headlines);
- }
- .activ-element:hover, .activ-element:focus {
-color: var(--accents);
- }
+li {
+  list-style: none;
+}
+button {
+ cursor: pointer
+}
 
- /* Контакти */
- .contacts-mail, .contacts-tel { 
-font-weight: 500;
-font-size: 14px;
-letter-spacing: 0.02em;
-color: var(--maintext);
- } 
- /* Герой */
+/* Логотип */
+
+.logo {
+  font-family: "Raleway", cursive;
+  font-weight: 700;
+  font-size: 26px;
+  color: var(--accents);
+}
+.logo-header {
+  color: var(--headlines);
+}
+
+/* Навігація */
+
+.nav-link {
+  font-weight: 500;
+  font-size: 14px;
+  letter-spacing: 0.02em;
+  color: var(--title);
+}
+.activ-element:hover,
+.activ-element:focus {
+  color: var(--accents);
+}
+
+/* Контакти */
+
+.contacts-mail,
+.contacts-tel {
+  font-weight: 500;
+  font-size: 14px;
+  letter-spacing: 0.02em;
+  color: var(--maintext);
+}
+
+/* Герой */
 .heading {
-font-weight: 900;
-font-size: 44px;
-line-height: 60px;
-text-align: center;
-letter-spacing: 0.06em;
-text-transform: uppercase;
-color: var(--bgr);
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.3;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--bgr);
 }
+
+/* Кнопка замовлення */
+
 .order {
-    background-color: var(--accents);
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 1.88;
-    display: flex;
-    align-items: center;
-    text-align: center;
-    letter-spacing: 0.06em;
-    color: var(--white);
+  background-color: var(--accents);
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+  color: var(--white);
 }
+
+/* Основний контент */
 
 .title {
-font-weight: 700;
-font-size: 36px;
-line-height: 1.3;
-text-align: center;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.3;
+  text-align: center;
 }
 .subtitle {
-font-weight: 700;
-font-size: 14px;
-color: var(--headlines)
+  font-weight: 700;
+  font-size: 14px;
+  color: var(--title);
 }
 .upcase {
-    text-transform: uppercase;
+  text-transform: uppercase;
 }
 .text {
-font-weight: 400;
-font-size: 14px;
-line-height: 1.71;
-color: var(--maintext);
+  font-size: 14px;
+  line-height: 1.71;
+  color: var(--maintext);
 }
+
+/* Підвал */
+footer {
+  background-color: var(--bgr-black);
+}
+
+.logo-footer {
+  color: var(--white);
+}
+
 .footer-link {
-font-style: normal;
-font-weight: 400;
-font-size: 14px;
-line-height: 1.71;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  /* background-color: #2F303A; */
+  color: rgba(255, 255, 255, 0.6);
 }
 .footer-map {
-background-color: #2F303A;
-color: var(--white)
-}
-.footer-a {
-    background-color: #2F303A;
-color: rgba(255, 255, 255, 0.6);
+  color: var(--white);
 }
 
 /* Сторінка портфоліо */
 
 /* Фільтр */
 .filter-list {
-font-weight: 500;
-font-size: 16px;
-line-height: 1.62;
-color: var(--title);
-background: #F5F4FA;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  background: #f5f4fa;
 }
-.filter-list:hover, .filter-list:focus {
-background-color: var(--accents);
-    color: var(--white)
+.filter-list:hover,
+.filter-list:focus {
+  background-color: var(--accents);
+  color: var(--white);
 }
