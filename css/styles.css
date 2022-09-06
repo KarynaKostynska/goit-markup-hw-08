@@ -4,6 +4,7 @@
 Колір білий #FFFFFF
 Колір абзаців #757575
 Колір фону #F5F4FA 
+Колір актівної кнопки #188CE8;
 */
 
 :root {
@@ -20,6 +21,7 @@ body {
   letter-spacing: 0.03em;
   line-height: 1.1;
   color: var(--title);
+  background-color: var(--white);
 }
 a {
   text-decoration: none;
@@ -30,14 +32,8 @@ li {
 button {
  cursor: pointer
 }
-.menu {
-    background-color: var(--white);
-}
 .hero {
  background-color: var(--bgr-black);
-}
-.benefits {
- background-color: var(--white);
 }
 .team {
  background-color: var(--bgr);
@@ -92,19 +88,34 @@ button {
 
 /* Кнопка замовлення */
 
-.order {
+.order-button {
+  font-family: "Roboto", sans-serif;
   background-color: var(--accents);
   font-weight: 700;
   font-size: 16px;
   line-height: 1.88;
-  align-items: center;
-  text-align: center;
   letter-spacing: 0.06em;
   color: var(--white);
+}
+.order-button:hover, 
+.order-button:focus {
+    background-color: #188CE8;
 }
 
 /* Основний контент */
 
+.hidden  {
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    margin: -1px;
+} 
 .title {
   font-weight: 700;
   font-size: 36px;
@@ -116,6 +127,12 @@ button {
   font-size: 14px;
   color: var(--title);
 }
+
+.subtitle-team, 
+.text-team
+{
+    font-size: 16px;
+}
 .upcase {
   text-transform: uppercase;
 }
@@ -123,6 +140,9 @@ button {
   font-size: 14px;
   line-height: 1.71;
   color: var(--maintext);
+}
+.team-list {
+    background-color: var(--white);
 }
 
 /* Підвал */
@@ -150,13 +170,32 @@ footer {
 
 /* Фільтр */
 .filter-list {
+  font-family: "Roboto", sans-serif;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.62;
   background: #f5f4fa;
 }
+
 .filter-list:hover,
 .filter-list:focus {
   background-color: var(--accents);
   color: var(--white);
+}
+
+/* Проекти */
+
+.project-name {
+color: var(--title);
+font-weight: 700;
+font-size: 18px;
+line-height: 2;
+letter-spacing: 0.06em;
+}
+.project-type {
+font-weight: 400;
+font-size: 16px;
+line-height: 1.88;
+letter-spacing: 0.03em;
+color: var(--maintext);
 }
