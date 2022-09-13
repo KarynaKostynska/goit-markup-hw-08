@@ -13,7 +13,9 @@
 html {
   box-sizing: border-box;
 }
-*, *::before, *::after {
+*,
+*::before,
+*::after {
   box-sizing: inherit;
 }
 
@@ -26,11 +28,11 @@ body {
   margin: 0 0;
 }
 .container {
-width: 1200px;
-padding-left: 15px;
-padding-right: 15px; 
-margin-left: auto;
-margin-right: auto;
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
 }
 .photo {
   display: block;
@@ -56,14 +58,14 @@ button {
 
 /* Логотип */
 header {
-  border-bottom: 1px solid #ECECEC;
+  border-bottom: 1px solid #ececec;
 }
 
-.logo { 
+.logo {
   margin-right: 93px;
   padding-top: 24px;
   padding-bottom: 25px;
-  
+
   font-family: "Raleway", cursive;
   font-weight: 700;
   font-size: 26px;
@@ -79,13 +81,11 @@ header {
   display: flex;
   padding-left: 0;
   margin: 0 0;
-
 }
 .nav-list .list {
   display: block;
   padding-top: 32px;
   padding-bottom: 32px;
-  
 }
 .nav-list > .list:not(:last-child) {
   margin-right: 50px;
@@ -117,7 +117,8 @@ header {
   margin-bottom: 0px;
 }
 .contacts .list:not(:last-child) {
-  margin-right: 50px;  }
+  margin-right: 50px;
+}
 
 .contacts-mail,
 .contacts-tel {
@@ -126,7 +127,8 @@ header {
   letter-spacing: 0.02em;
   color: var(--maintext);
 }
-.contacts-mail, .contacts-tel {
+.contacts-mail,
+.contacts-tel {
   padding-top: 32px;
   padding-bottom: 32px;
 }
@@ -156,12 +158,12 @@ header {
 /* Кнопка замовлення */
 
 .order-button {
- display: flex;
- align-items: center;
- margin: 0 auto;
- padding: 15px 32px;
- border-radius: 4px;
- border: 0px;
+  display: flex;
+  align-items: center;
+  margin: 0 auto;
+  padding: 15px 32px;
+  border-radius: 4px;
+  border: 0px;
 
   font-family: "Roboto", sans-serif;
   background-color: var(--accents);
@@ -195,7 +197,7 @@ header {
 }
 
 .benefits {
-  padding:  94px 0 47px 0;
+  padding: 94px 0 47px 0;
 }
 
 .list-benefits {
@@ -230,7 +232,6 @@ header {
   display: flex;
   margin: 0 0;
   padding: 0 0;
-
 }
 .activity-list .list:not(:last-child) {
   margin-right: 30px;
@@ -245,7 +246,7 @@ header {
 
 .team-list {
   background-color: var(--white);
-  border: 1px solid #ECECEC;
+  border: 1px solid #ececec;
 }
 .team-list:not(:last-child) {
   margin-right: 30px;
@@ -257,14 +258,12 @@ header {
 .subtitle-team {
   text-align: center;
   padding-top: 30px;
-  margin: 0 0 10px 0; 
-  
+  margin: 0 0 10px 0;
 }
 .text-team {
   text-align: center;
   margin: 0 0;
   padding: 0 0 30px 0;
-
 }
 .upcase {
   text-transform: uppercase;
@@ -276,9 +275,6 @@ header {
   margin: 0 0;
 }
 
-
-
-
 /* Підвал */
 footer {
   background-color: var(--bgr-black);
@@ -288,21 +284,19 @@ footer {
   margin-top: 60px;
   margin-bottom: 20px;
   padding: 60px auto 20px 0px;
-  
+
   font-family: "Raleway", cursive;
   font-weight: 700;
   font-size: 26px;
   color: var(--accents);
-
 }
 .part-footer {
   color: var(--white);
 }
 
-
 .footer-link {
   padding: 0 0 60px 0;
-margin: 0 0;
+  margin: 0 0;
 
   font-style: normal;
   font-weight: 400;
@@ -312,7 +306,7 @@ margin: 0 0;
   color: rgba(255, 255, 255, 0.6);
 }
 .footer-link .list:not(:last-child) {
-margin-bottom: 9px;
+  margin-bottom: 9px;
 }
 
 .footer-map {
@@ -327,12 +321,11 @@ margin-bottom: 9px;
   margin: 0 0;
   padding: 94px 0 50px 0;
   justify-content: center;
-} 
-
-.filter .list:not(:last-child) {
-margin-right: 8px;
 }
 
+.filter .list:not(:last-child) {
+  margin-right: 8px;
+}
 
 .filter-list {
   font-family: "Roboto", sans-serif;
@@ -362,11 +355,11 @@ margin-right: 8px;
 }
 
 .card {
-  border-left: 1px solid #ECECEC;
-  border-right: 1px solid #ECECEC;
-  border-bottom: 1px solid #ECECEC;
+  border-left: 1px solid #ececec;
+  border-right: 1px solid #ececec;
+  border-bottom: 1px solid #ececec;
 }
-.project .list:not(:nth-child(3n+3)) {
+.project .list:not(:nth-child(3n + 3)) {
   margin-right: 30px;
 }
 
