@@ -37,7 +37,10 @@ body {
 .photo {
   display: block;
 }
-
+ul {
+  padding: 0 0;
+  margin: 0 0;
+}
 a {
   text-decoration: none;
 }
@@ -57,7 +60,7 @@ button {
 /* Шапка */
 
 /* Логотип */
-header {
+.header {
   border-bottom: 1px solid #ececec;
 }
 
@@ -140,7 +143,7 @@ header {
   background-color: var(--bgr-black);
 }
 .heading {
-  width: 696px;
+  max-width: 696px;
   margin-right: auto;
   margin-left: auto;
   margin-top: 0px;
@@ -201,10 +204,18 @@ header {
 }
 
 .list-benefits {
+  display: flex;
+  flex-wrap: wrap;
   margin: 0 0;
+  padding: 0 0;
+  margin-right: -30px;
 }
-.list-benefits .list:not(:last-child) {
+.list-benefits .list{
+  flex-basis: calc(100% / 4 - 30px);
   margin-right: 30px;
+}
+.list-benefits .list:last-child {
+  margin-right: 0%;
 }
 .list .subtitle {
   margin-bottom: 10px;
@@ -246,7 +257,7 @@ header {
 
 .team-list {
   background-color: var(--white);
-  border: 1px solid #ececec;
+  border-radius: 0 0 4px 4px;
 }
 .team-list:not(:last-child) {
   margin-right: 30px;
@@ -276,14 +287,14 @@ header {
 }
 
 /* Підвал */
-footer {
+.footer {
   background-color: var(--bgr-black);
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 .logo-footer {
   display: inline-block;
-  margin-top: 60px;
   margin-bottom: 20px;
-  padding: 60px auto 20px 0px;
 
   font-family: "Raleway", cursive;
   font-weight: 700;
@@ -295,9 +306,6 @@ footer {
 }
 
 .footer-link {
-  padding: 0 0 60px 0;
-  margin: 0 0;
-
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -315,15 +323,19 @@ footer {
 
 /* Сторінка портфоліо */
 
+.portfolio {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
 /* Фільтр */
 .filter {
   display: flex;
-  margin: 0 0;
-  padding: 94px 0 50px 0;
+  margin: 0 0 50px 0;
   justify-content: center;
 }
 
-.filter .list:not(:last-child) {
+.filter .list {
   margin-right: 8px;
 }
 
@@ -347,29 +359,23 @@ footer {
 
 /* Проекти */
 
+
 .project {
   display: flex;
   flex-wrap: wrap;
-  margin: 0 0;
-  padding: 0 0 94px 0;
+  margin: 0 -30px -30px 0;
 }
-
-.card {
-  border-left: 1px solid #ececec;
-  border-right: 1px solid #ececec;
-  border-bottom: 1px solid #ececec;
-}
-.project .list:not(:nth-child(3n + 3)) {
-  margin-right: 30px;
-}
-
 .project .list {
+  flex-basis: calc(100% / 3 - 30px);
+  margin-right: 30px;
   margin-bottom: 30px;
 }
 .project .list:nth-last-child(-n + 3) {
   margin-bottom: 0px;
 }
-/* :not(:last-child(3)) */
+.project .list:nth-child(3n + 3) {
+  margin-right: 0px;
+}
 
 .project-name {
   margin: 0 0 4px 0;
@@ -390,4 +396,16 @@ footer {
   line-height: 1.88;
   letter-spacing: 0.03em;
   color: var(--maintext);
+}
+
+.box::before {
+  content: 'Це текст в ::before';
+  font-size: 40px;
+  color: orange;
+}
+
+.box::after {
+  content: 'Це текст в ::after';
+  font-size: 30px;
+  color: teal;
 }
