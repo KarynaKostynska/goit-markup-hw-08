@@ -142,7 +142,8 @@ button {
 .hero {
   padding: 200px 0 200px 0;
   background-color: var(--bgr-black);
-  background-image: url('/images/bgi.jpg');
+  background: url(/images/img-3.jpg);
+  
 }
 .heading {
   max-width: 696px;
