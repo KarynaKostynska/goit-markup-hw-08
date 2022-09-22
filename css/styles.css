@@ -138,6 +138,8 @@ button {
 }
 
 .contacts-icon {
+  display: block;
+  align-items: center;
   margin-right: 10px;
 }
 
@@ -221,6 +223,8 @@ margin-bottom: 30px;
   margin-right: auto;
   margin-top: 25px;
   margin-bottom: 25px;
+  width: 70px;
+  height: 70px;
 }
 .list-benefits {
   display: flex;
