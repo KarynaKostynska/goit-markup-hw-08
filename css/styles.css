@@ -142,7 +142,8 @@ button {
 .hero {
   padding: 200px 0 200px 0;
   background-color: var(--bgr-black);
-  background: url(/images/img-3.jpg);
+  background: url(./images/back.jpg);
+
   
 }
 .heading {
