@@ -137,15 +137,16 @@ button {
   padding-bottom: 32px;
 }
 
+.contacts-icon {
+  margin-right: 10px;
+}
+
 /* Герой */
 
 .hero {
   padding: 200px 0 200px 0;
-  
   background-color: var(--bgr-black);
-  
   background-image: url(../images/back.jpg);
-  background: rgba(47, 48, 58, 0.228);
 
 }
 .heading {
@@ -208,12 +209,18 @@ button {
 .benefits {
   padding: 94px 0 0 0;
 }
-.benefits-icon {
+.benefits-backg {
 margin-bottom: 30px;
-
   width: 270px;
   height: 120px;
   background-color: var(--bgr);
+}
+.benefits-icon{
+  display:block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 25px;
+  margin-bottom: 25px;
 }
 .list-benefits {
   display: flex;
