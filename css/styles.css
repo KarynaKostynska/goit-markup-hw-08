@@ -208,13 +208,18 @@ button {
 .benefits {
   padding: 94px 0 0 0;
 }
+.benefits-icon {
+margin-bottom: 30px;
 
+  width: 270px;
+  height: 120px;
+  background-color: var(--bgr);
+}
 .list-benefits {
   display: flex;
   flex-wrap: wrap;
   margin-right: -30px;
 }
-/* calc((100% - 3 * 30px) / 4); */
 .list-benefits .list {
   flex-basis: calc(100% / 4 - 30px);
   margin-right: 30px;
