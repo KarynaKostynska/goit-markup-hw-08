@@ -212,7 +212,7 @@ button {
   padding: 94px 0 0 0;
 }
 .benefits-bgc {
-margin-bottom: 30px;
+  margin-bottom: 30px;
   width: 270px;
   height: 120px;
   background-color: var(--bgr);
@@ -284,6 +284,7 @@ margin-bottom: 30px;
 .bgc-team:not(:last-child) {
   margin-right: 10px;
 }
+
 .bgc-team:hover {
   background-color: var(--accents);
 }
@@ -293,8 +294,9 @@ margin-bottom: 30px;
   margin: 12px;
 }
 .team-icon:hover {
-  fill: var(--white);
+  fill: #ffffff;
 }
+
 
 .team {
   padding: 94px 0 94px 0;
@@ -305,6 +307,8 @@ margin-bottom: 30px;
 .team-list {
   background-color: var(--white);
   border-radius: 0 0 4px 4px;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+border-radius: 0px 0px 4px 4px;
 }
 .team-list:not(:last-child) {
   margin-right: 30px;
@@ -332,6 +336,29 @@ margin-bottom: 30px;
   line-height: 1.71;
   color: var(--maintext);
   margin: 0 0;
+}
+/* Клієнти */
+.client-box {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+.client-list {
+  display: flex;
+  justify-content: center;
+}
+
+.bgc-client {
+  width: 170px;
+  height: 92px;
+  border: 1px solid #AFB1B8;
+border-radius: 4px;
+}
+.bgc-client:hover {
+  border: 1px solid var(--accents)
+}
+
+.bgc-client:not(:last-child) {
+  margin-right: 30px;
 }
 
 /* Підвал */
