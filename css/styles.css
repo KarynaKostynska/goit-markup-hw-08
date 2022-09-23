@@ -482,3 +482,7 @@ border-radius: 4px;
   border-right: 1px solid #ececec;
   border-bottom: 1px solid #ececec;
 }
+
+.social-list {
+  display: flex;
+}
