@@ -53,6 +53,7 @@ button {
 
 .case {
   display: flex;
+  flex-wrap: wrap;
 }
 
 /* Шапка */
@@ -279,18 +280,18 @@ button {
   justify-content: center;
   
 }
-.bgc-team {
+.bgc-icon {
   width: 44px;
   height: 44px;
   margin-top: 16px;
   margin-bottom: 30px;
   border-radius: 50%;
 }
-.bgc-team:not(:last-child) {
+.bgc-icon:not(:last-child) {
   margin-right: 10px;
 }
 
-.bgc-team:hover {
+.bgc-icon:hover {
   background-color: var(--accents);
 }
 .team-icon {
@@ -372,7 +373,12 @@ border-radius: 4px;
 }
 
 /* Підвал */
+.footer-box {
+  display: flex;
+  align-items: flex-start;
+}
 .footer {
+  display: flex;
   background-color: var(--bgr-black);
   padding-top: 60px;
   padding-bottom: 60px;
@@ -405,7 +411,37 @@ border-radius: 4px;
 .footer-map {
   color: var(--white);
 }
+.footer-social {
+  margin-left: 70px;
+  align-items: center;
+  margin-top: auto;
+  margin-bottom: auto;
+}
 
+.social-list {
+  display: flex;
+}
+.follow {
+  margin-top: 0px ;
+  margin-bottom: 20px;
+
+  color: var(--white);
+}
+.social-list .bgc-icon {
+  margin: 0 10px 0 0;
+}
+.social-list .bgc-icon:last-child {
+  margin-right: 0;
+}
+.footer-icon {
+  margin: 12px;
+}
+.social-list .bgc-icon {
+  background: rgba(255, 255, 255, 0.1);
+}
+.social-list .bgc-icon:hover {
+  background-color: var(--accents);
+}
 /* Сторінка портфоліо */
 
 .portfolio {
