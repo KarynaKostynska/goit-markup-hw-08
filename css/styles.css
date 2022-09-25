@@ -292,6 +292,7 @@ button {
   width: 20px;
   height: 20px;
   margin: 12px;
+  fill: #AFB1B8;
 }
 .team-icon:hover {
   fill: #ffffff;
@@ -337,10 +338,14 @@ border-radius: 0px 0px 4px 4px;
   color: var(--maintext);
   margin: 0 0;
 }
+
 /* Клієнти */
 .client-box {
   padding-top: 94px;
   padding-bottom: 94px;
+}
+.client-icon{
+  margin: 16px 32px;
 }
 .client-list {
   display: flex;
