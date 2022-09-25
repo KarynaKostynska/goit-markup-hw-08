@@ -141,7 +141,12 @@ button {
   display: block;
   align-items: center;
   margin-right: 10px;
+  fill: var(--maintext)
 }
+.contacts-icon:hover {
+  fill: var(--accents);
+}
+
 
 /* Герой */
 
