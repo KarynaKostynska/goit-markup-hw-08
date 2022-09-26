@@ -146,10 +146,15 @@ button {
 .contacts-mail:hover .contacts-icon {
   fill: var(--accents);
 }
+.contacts-mail:focus .contacts-icon {
+  fill: var(--accents);
+}
 .contacts-tel:hover .contacts-icon {
   fill: var(--accents);
 }
-
+.contacts-tel:focus .contacts-icon {
+  fill: var(--accents);
+}
 /* Герой */
 
 .hero {
@@ -294,6 +299,9 @@ button {
 }
 
 .bgc-icon:hover {
+  background-color: var(--accents);
+}
+.bgc-icon:focus {
   background-color: var(--accents);
 }
 .team-icon {
