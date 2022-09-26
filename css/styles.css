@@ -137,18 +137,16 @@ button {
   padding-top: 32px;
   padding-bottom: 32px;
 }
-
 .contacts-icon {
   display: block;
   align-items: center;
   margin-right: 10px;
   fill: var(--maintext)
 }
-.contacts-mail:focus .contacts-icon
-.contacts-mail:hover .contacts-icon {
+.contacts-mail:focus .contacts-icon, .contacts-tel
+.contacts-mail:hover .contacts-icon, .contacts-tel {
   fill: var(--accents);
 }
-
 
 /* Герой */
 
@@ -377,6 +375,9 @@ border-radius: 4px;
 }
 
 /* Підвал */
+.footer-icon {
+  fill: var(--white);
+}
 .footer-box {
   display: flex;
   align-items: flex-start;
