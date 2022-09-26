@@ -369,7 +369,7 @@ border-radius: 0px 0px 4px 4px;
   border: 1px solid #AFB1B8;
 border-radius: 4px;
 }
-.bgc-client:focus
+.bgc-client:focus,
 .bgc-client:hover {
   border: 1px solid var(--accents)
 }
