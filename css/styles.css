@@ -143,11 +143,9 @@ button {
   margin-right: 10px;
   fill: var(--maintext)
 }
-.contacts-mail:focus .contacts-icon,
 .contacts-mail:hover .contacts-icon {
   fill: var(--accents);
 }
-.contacts-tel:focus .contacts-icon,
 .contacts-tel:hover .contacts-icon {
   fill: var(--accents);
 }
