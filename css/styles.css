@@ -143,11 +143,11 @@ button {
   margin-right: 10px;
   fill: var(--maintext)
 }
-.contacts-mail:focus .contacts-icon
+.contacts-mail:focus .contacts-icon,
 .contacts-mail:hover .contacts-icon {
   fill: var(--accents);
 }
-.contacts-tel:focus .contacts-icon
+.contacts-tel:focus .contacts-icon,
 .contacts-tel:hover .contacts-icon {
   fill: var(--accents);
 }
@@ -294,7 +294,7 @@ button {
 .bgc-icon:not(:last-child) {
   margin-right: 10px;
 }
-.bgc-icon:focus
+
 .bgc-icon:hover {
   background-color: var(--accents);
 }
@@ -304,11 +304,12 @@ button {
   margin: 12px;
   fill: #AFB1B8;
 }
-.team-icon .bgc-icon:hover,
-.team-icon .bgc-icon:focus {
-  fill: #ffffff;
+.bgc-icon:hover .team-icon {
+  fill: var(--white);
 }
-
+.bgc-icon:focus .team-icon {
+  fill: var(--white);
+}
 
 .team {
   padding: 94px 0 94px 0;
