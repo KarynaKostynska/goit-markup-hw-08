@@ -144,6 +144,7 @@ button {
   margin-right: 10px;
   fill: var(--maintext)
 }
+.contacts-mail:focus .contacts-icon
 .contacts-mail:hover .contacts-icon {
   fill: var(--accents);
 }
@@ -291,7 +292,7 @@ button {
 .bgc-icon:not(:last-child) {
   margin-right: 10px;
 }
-
+.bgc-icon:focus
 .bgc-icon:hover {
   background-color: var(--accents);
 }
@@ -301,7 +302,8 @@ button {
   margin: 12px;
   fill: #AFB1B8;
 }
-.team-icon:hover {
+.bgc-icon:hover .team-icon,
+.bcc-icon:focus .team-icon {
   fill: #ffffff;
 }
 
@@ -365,6 +367,7 @@ border-radius: 0px 0px 4px 4px;
   border: 1px solid #AFB1B8;
 border-radius: 4px;
 }
+.bgc-client:focus
 .bgc-client:hover {
   border: 1px solid var(--accents)
 }
@@ -440,6 +443,7 @@ border-radius: 4px;
 .social-list .bgc-icon {
   background: rgba(255, 255, 255, 0.1);
 }
+.social-list .bgc-icon:focus,
 .social-list .bgc-icon:hover {
   background-color: var(--accents);
 }
@@ -477,6 +481,7 @@ border-radius: 4px;
 .filter-list:focus {
   background-color: var(--accents);
   color: var(--white);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 /* Проекти */
@@ -504,6 +509,7 @@ border-radius: 4px;
 .project .list:nth-child(3n + 3) {
   margin-right: 0px;
 }
+.project .list:focus,
 .project .list:hover {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 } 
