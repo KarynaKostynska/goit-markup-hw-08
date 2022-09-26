@@ -143,8 +143,12 @@ button {
   margin-right: 10px;
   fill: var(--maintext)
 }
-.contacts-mail:focus .contacts-icon, .contacts-tel
-.contacts-mail:hover .contacts-icon, .contacts-tel {
+.contacts-mail:focus .contacts-icon
+.contacts-mail:hover .contacts-icon {
+  fill: var(--accents);
+}
+.contacts-tel:focus .contacts-icon
+.contacts-tel:hover .contacts-icon {
   fill: var(--accents);
 }
 
@@ -300,8 +304,8 @@ button {
   margin: 12px;
   fill: #AFB1B8;
 }
-.bgc-icon:hover .team-icon,
-.bcc-icon:focus .team-icon {
+.team-icon .bgc-icon:hover,
+.team-icon .bgc-icon:focus {
   fill: #ffffff;
 }
 
