@@ -164,6 +164,7 @@ border-radius: 2px;
   align-items: center;
   margin-right: 10px;
   fill: var(--maintext)
+  transition: accent-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .contacts-mail:hover .contacts-icon {
   fill: var(--accents);
@@ -409,7 +410,7 @@ background: rgba(47, 48, 58, 0.8);
   width: 20px;
   height: 20px;
   fill: #AFB1B8;
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: accent-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .bgc-icon:hover .team-icon {
   fill: var(--white);
@@ -475,7 +476,7 @@ border-radius: 0px 0px 4px 4px;
 }
 .client-icon{
   fill: var(--icon); 
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: accent-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .client-list {
   display: flex;
@@ -608,7 +609,7 @@ border-radius: 0px 0px 4px 4px;
   border: 0;
   border-radius: 4px;
   margin: 0 0;
-  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: box-shadow, background, color, 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .filter-list:hover,
@@ -692,7 +693,7 @@ transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .card-box {
   display: block;
-  transition:  250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
  .card-box:hover,
  .card-box:focus {
