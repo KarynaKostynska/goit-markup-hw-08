@@ -67,7 +67,6 @@ button {
 .header {
   border-bottom: 1px solid #ececec;
 }
-
 .logo {
   margin-right: 93px;
   padding-top: 24px;
@@ -263,9 +262,8 @@ button {
 }
 .close {
   position: absolute;
-  right: 0;
-  margin-top: 8px;
-  margin-right: 8px;
+  top: 8px;
+  right: 8px;
   padding: 0;
 
   width: 30px;
@@ -387,7 +385,6 @@ button {
   width: 44px;
   height: 44px;
 }
-
 .bgc-icon {
   display: flex;
   align-items: center;
@@ -397,14 +394,10 @@ button {
   border-radius: 50%;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
 .list-team-icon:not(:last-child) {
   margin-right: 10px;
 }
-
-.bgc-icon:hover {
-  background-color: var(--accents);
-}
+.bgc-icon:hover,
 .bgc-icon:focus {
   background-color: var(--accents);
 }
@@ -414,9 +407,7 @@ button {
   fill: #afb1b8;
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.bgc-icon:hover .team-icon {
-  fill: var(--white);
-}
+.bgc-icon:hover .team-icon,
 .bgc-icon:focus .team-icon {
   fill: var(--white);
 }
@@ -649,7 +640,8 @@ button {
   background: rgba(33, 150, 243, 0.9);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.card-box:hover .card-overlay::before {
+.card-box:hover .card-overlay::before,
+.card-box:focus .card-overlay::before {
   content: "";
   display: block;
   position: absolute;
