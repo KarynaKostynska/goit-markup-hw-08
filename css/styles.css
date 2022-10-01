@@ -274,8 +274,9 @@ button {
   border-radius: 50%;
 }
 .icon-close {
-  display: block;
-  margin: 6px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 /* Основний контент */
 
