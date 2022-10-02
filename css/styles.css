@@ -485,7 +485,7 @@ button {
 .link-client:hover {
   border: 1px solid var(--accents);
 }
-.link-client:hover .client-icon
+.link-client:hover .client-icon,
 .link-client:focus .client-icon {
   fill: var(--accents);
 }
