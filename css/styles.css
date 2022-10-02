@@ -467,11 +467,11 @@ button {
   border: 1px solid #afb1b8;
   border-radius: 4px;
 
-  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .client-icon {
   fill: var(--icon);
-  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .client-list {
   display: flex;
@@ -485,7 +485,8 @@ button {
 .link-client:hover {
   border: 1px solid var(--accents);
 }
-.link-client:hover .client-icon {
+.link-client:hover .client-icon
+.link-client:focus .client-icon {
   fill: var(--accents);
 }
 .bgc-client:not(:last-child) {
