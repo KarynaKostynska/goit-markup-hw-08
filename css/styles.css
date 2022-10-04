@@ -207,7 +207,6 @@ button {
 
 /* Кнопка замовлення */
 
-
 .button {
   border-radius: 4px;
   border: 0px;
@@ -248,12 +247,11 @@ button {
   pointer-events: none;
 }
 
-
 /* Модальне вікно */
 
 .backdrop.is-hidden .modal {
   transform: translate(-50%, -50%) scale(1.1);
-  }
+}
 
 .modal {
   position: absolute;
@@ -284,129 +282,132 @@ button {
 }
 
 .modal-title {
-margin-top: 40px;
+  margin-top: 40px;
 
-font-size: 20px;
-line-height: 1.15;
-text-align: center;
-letter-spacing: 0.03em;
+  font-size: 20px;
+  line-height: 1.15;
+  text-align: center;
+  letter-spacing: 0.03em;
 
-color: var(--title);
+  color: var(--title);
 }
 
 .icon-close {
-display: flex;
-justify-content: center;
-align-items: center;
-fill:#000000
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  fill: #000000;
 }
 .close:hover .icon-close,
 .close:focus .icon-close {
-fill: var(--accents);
+  fill: var(--accents);
 }
 
 form {
-display: flex;
-flex-wrap: wrap;
-justify-content: center;
-align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
 }
 .icon-modal {
   position: absolute;
   top: 50%;
   left: 12px;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .modal-border:focus-within ~ .icon-modal {
-  fill: var(--accents)
+  fill: var(--accents);
 }
 .nomination {
   position: relative;
   margin-bottom: 10px;
-  
+
   font-size: 12px;
   line-height: 14px;
   letter-spacing: 0.01em;
   color: #757575;
-  }
- 
+}
+
 .modal-border {
-display: block;
-width: 448px;
-height: 40px;
-margin-top: 4px;
-padding: 12px 42px;
+  display: block;
+  width: 448px;
+  height: 40px;
+  margin-top: 4px;
+  padding: 12px 42px;
 
-border: 1px solid rgba(33, 33, 33, 0.2);
-border-radius: 4px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
 
-font-size: 12px;
-line-height: 1.16;
-letter-spacing: 0.01em;
+  font-size: 12px;
+  line-height: 1.16;
+  letter-spacing: 0.01em;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .modal-border:focus-within {
-  border: 1px solid #2196F3;
+  border: 1px solid #2196f3;
 }
 
 .coment {
-display: block;
-resize: none;
-width: 448px;
-height: 120px;
-margin-top: 4px;
-padding: 12px 16px;
+  display: block;
+  resize: none;
+  width: 448px;
+  height: 120px;
+  margin-top: 4px;
+  padding: 12px 16px;
 
-border: 1px solid rgba(33, 33, 33, 0.2);
-border-radius: 4px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
 
-font-size: 12px;
-line-height: 1.16;
-letter-spacing: 0.01em;
+  font-size: 12px;
+  line-height: 1.16;
+  letter-spacing: 0.01em;
 }
 .check-nomination {
   display: flex;
   align-items: center;
   position: relative;
   margin-bottom: 10px;
-  
+
   font-size: 12px;
   line-height: 14px;
   letter-spacing: 0.01em;
   color: #757575;
 }
-.checkbox{
+.checkbox {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .check {
   display: inline-block;
   width: 16px;
   height: 15px;
   margin-right: 8px;
-  
+
   background-image: url(../images/check-no.svg);
+
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .checkbox:checked + .check {
-  
-  background-image: url(../images/check.svg);
   background-size: contain;
   background-origin: border-box;
+  background-image: url(../images/check.svg);
 }
 
 .conditions {
   font-size: 14px;
-line-height: 1.71;
-letter-spacing: 0.03em;
-text-decoration-line: underline;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  text-decoration-line: underline;
 
-color: var(--accents);
+  color: var(--accents);
 }
 .send {
   width: 200px;
   height: 50px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
-
 
 /* Основний контент */
 
@@ -597,7 +598,8 @@ color: var(--accents);
   border: 1px solid #afb1b8;
   border-radius: 4px;
 
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .client-icon {
   fill: var(--icon);
@@ -622,8 +624,6 @@ color: var(--accents);
 .bgc-client:not(:last-child) {
   margin-right: 30px;
 }
-
-
 
 /* Підвал */
 .footer-icon {
@@ -669,7 +669,6 @@ color: var(--accents);
   font-weight: 700;
   font-size: 14px;
   letter-spacing: 0.03em;
-  
 
   color: var(--white);
 }
@@ -712,30 +711,29 @@ color: var(--accents);
 .mail-list {
   display: block;
   margin-bottom: 20px;
-  
 }
 .frame {
-display: flex;
-align-items: center;
-width: 358px;
-height: 50px;
-background-color: #2F303A;
-padding: 15px;
+  display: flex;
+  align-items: center;
+  width: 358px;
+  height: 50px;
+  background-color: #2f303a;
+  padding: 15px;
 
-border: 1px solid rgba(255, 255, 255, 0.3);
-filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
-border-radius: 4px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
 
-font-family: 'Roboto';
-font-style: normal;
-font-weight: 400;
-font-size: 16px;
-line-height: 1.25;
-letter-spacing: 0.03em;
-color: rgba(255, 255, 255, 0.6);
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.25;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
 }
 .input-email > form {
-  display: flex;  
+  display: flex;
   flex-wrap: wrap;
 }
 .fly {
@@ -754,7 +752,6 @@ color: rgba(255, 255, 255, 0.6);
   margin-left: 10px;
   background-image: url(../images/send.svg);
 }
-
 
 /* Сторінка портфоліо */
 
