@@ -316,7 +316,7 @@ align-items: center;
   top: 50%;
   left: 12px;
 }
-.nomination:focus ~ .icon-modal {
+.modal-border:focus-within ~ .icon-modal {
   fill: var(--accents)
 }
 .nomination {
