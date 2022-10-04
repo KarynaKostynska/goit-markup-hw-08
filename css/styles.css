@@ -283,8 +283,12 @@ button {
     display: flex;
     justify-content: center;
     align-items: center;
+    fill:#000000
   }
-
+  .icon-close:hover,
+  .icon-close:focus {
+    fill: var(--accents);
+  }
 form {
   display: flex;
   flex-wrap: wrap;
