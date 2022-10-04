@@ -316,7 +316,7 @@ align-items: center;
   top: 50%;
   left: 12px;
 }
-.nomination:focus .icon-modal {
+.nomination:focus ~ .icon-modal {
   fill: var(--accents)
 }
 .nomination {
@@ -334,7 +334,7 @@ display: block;
 width: 448px;
 height: 40px;
 margin-top: 4px;
-padding: 12px 16px;
+padding: 12px 42px;
 
 border: 1px solid rgba(33, 33, 33, 0.2);
 border-radius: 4px;
