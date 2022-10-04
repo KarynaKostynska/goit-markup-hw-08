@@ -267,12 +267,13 @@ button {
 }
 
 .modal-title {
-  font-weight: 700;
+  margin-top: 40px;
+  
   font-size: 20px;
-  line-height: 23px;
+  line-height: 1.15;
   text-align: center;
   letter-spacing: 0.03em;
-  
+
   color: var(--title);
   }
 
@@ -285,8 +286,8 @@ button {
     align-items: center;
     fill:#000000
   }
-  .icon-close:hover,
-  .icon-close:focus {
+  .data-modal-close:hover .icon-close,
+  .data-modal-close:focus .icon-close {
     fill: var(--accents);
   }
 form {
