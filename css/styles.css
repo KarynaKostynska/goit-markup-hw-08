@@ -374,19 +374,20 @@ letter-spacing: 0.01em;
   color: #757575;
 }
 .checkbox{
-  /* -webkit-appearance: none;
+  -webkit-appearance: none;
   -moz-appearance: none;
-  appearance: none; */
+  appearance: none;
 }
 .check {
   display: inline-block;
   width: 16px;
   height: 15px;
-  background-color:#2F303A;
+  margin-right: 8px;
+  
   background-image: url(../images/check-no.svg);
 }
 .checkbox:checked + .check {
-  background-color: #188ce8;
+  
   background-image: url(../images/check.svg);
   background-size: contain;
   background-origin: border-box;
