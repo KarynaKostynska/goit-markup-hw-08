@@ -286,8 +286,9 @@ button {
     align-items: center;
     fill:#000000
   }
-  .data-modal-close:hover .icon-close,
-  .data-modal-close:focus .icon-close {
+
+  .close:hover .icon-close,
+  .close:focus .icon-close {
     fill: var(--accents);
   }
 form {
