@@ -251,6 +251,9 @@ button {
 
 /* Модальне вікно */
 
+.backdrop.is-hidden .modal {
+  transform: translate(-50%, -50%) scale(1.1);
+  }
 
 .modal {
   position: absolute;
@@ -264,56 +267,6 @@ button {
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
   transition: transform 550ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.modal-title {
-  margin-top: 40px;
-  
-  font-size: 20px;
-  line-height: 1.15;
-  text-align: center;
-  letter-spacing: 0.03em;
-
-  color: var(--title);
-  }
-
-  .backdrop.is-hidden .modal {
-    transform: translate(-50%, -50%) scale(1.1);
-  }
-  .icon-close {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    fill:#000000
-  }
-
-  .close:hover .icon-close,
-  .close:focus .icon-close {
-    fill: var(--accents);
-  }
-form {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  /* width: 448px; */
-}
-
-.modal-border {
-display: block;
-width: 448px;
-height: 40px;
-margin-top: 4px;
-padding: 12px 16px;
-
-border: 1px solid rgba(33, 33, 33, 0.2);
-border-radius: 4px;
-
-
-font-size: 12px;
-line-height: 14px;
-letter-spacing: 0.01em;
-
 }
 
 .close {
@@ -330,14 +283,67 @@ letter-spacing: 0.01em;
   border-radius: 50%;
 }
 
+.modal-title {
+margin-top: 40px;
+
+font-size: 20px;
+line-height: 1.15;
+text-align: center;
+letter-spacing: 0.03em;
+
+color: var(--title);
+}
+
+.icon-close {
+display: flex;
+justify-content: center;
+align-items: center;
+fill:#000000
+}
+.close:hover .icon-close,
+.close:focus .icon-close {
+fill: var(--accents);
+}
+
+form {
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
+align-items: center;
+}
+.icon-modal {
+  position: absolute;
+  top: 50%;
+  left: 12px;
+}
+.nomination:focus .icon-modal {
+  fill: var(--accents)
+}
 .nomination {
+  position: relative;
   margin-bottom: 10px;
+  
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 0.01em;
+  color: #757575;
+  }
+ 
+.modal-border {
+display: block;
+width: 448px;
+height: 40px;
+margin-top: 4px;
+padding: 12px 16px;
+
+border: 1px solid rgba(33, 33, 33, 0.2);
+border-radius: 4px;
 
 font-size: 12px;
 line-height: 14px;
 letter-spacing: 0.01em;
-color: #757575;
 }
+
 .coment {
   resize: none;
   width: 448px;
