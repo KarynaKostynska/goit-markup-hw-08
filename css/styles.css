@@ -362,6 +362,23 @@ font-size: 12px;
 line-height: 1.16;
 letter-spacing: 0.01em;
 }
+.checkbox{
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+.check {
+  display: inline-block;
+  width: 16px;
+  height: 15px;
+  background-image: url(../images/icons.svg#icon-check-no);
+}
+.checkbox:checked + .check {
+  background-image: url(../images/icons.svg#icon-check);
+  background-size: contain;
+  background-origin: border-box;
+}
+
 .conditions {
   font-size: 14px;
 line-height: 1.71;
