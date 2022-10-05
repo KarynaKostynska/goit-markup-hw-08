@@ -321,8 +321,7 @@ button {
 }
 .modal-border:hover ~ .icon-modal,
 .modal-border:focus ~ .icon-modal,
-.modal-border:focus-within ~ .icon-modal,
-.modal-border:active ~ .icon-modal {
+.modal-border:focus-within ~ .icon-modal {
   fill: var(--accents);
 }
 .nomination {
@@ -334,6 +333,7 @@ button {
   letter-spacing: 0.01em;
   color: #757575;
 }
+.nomination:focus
 
 .nomination-coment {
   position: relative;
@@ -361,9 +361,12 @@ button {
 }
 .modal-border:hover,
 .modal-border:focus,
-.modal-border:focus-within,
-.modal-border:active {
+.modal-border:focus-within {
   border: 1px solid #2196f3;
+}
+.modal-border:focus,
+.modal-border:focus-within {
+  outline: 1px var(--accents);
 }
 
 .coment {
