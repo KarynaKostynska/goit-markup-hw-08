@@ -269,6 +269,9 @@ button {
 }
 
 .close {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   position: absolute;
   top: 8px;
   right: 8px;
@@ -293,9 +296,9 @@ button {
 }
 
 .icon-close {
-  display: flex;
+  /* display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: center; */
   fill: #000000;
 }
 .close:hover .icon-close,
@@ -318,7 +321,8 @@ button {
 }
 .modal-border:hover ~ .icon-modal,
 .modal-border:focus ~ .icon-modal,
-.modal-border:focus-within ~ .icon-modal {
+.modal-border:focus-within ~ .icon-modal,
+.modal-border:active ~ .icon-modal {
   fill: var(--accents);
 }
 .nomination {
@@ -357,7 +361,8 @@ button {
 }
 .modal-border:hover,
 .modal-border:focus,
-.modal-border:focus-within {
+.modal-border:focus-within,
+.modal-border:active {
   border: 1px solid #2196f3;
 }
 
