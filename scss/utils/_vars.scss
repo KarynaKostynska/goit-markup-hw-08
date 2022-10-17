@@ -41,26 +41,35 @@ body {
   @media screen and (min-width: 1200px) {
   }
 }
+
 .container {
-  padding-left: 15px;
-  padding-right: 15px;
-  margin-left: auto;
-  margin-right: auto;
-  align-items: center;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    align-items: center;
+
+    @media screen and (min-width: 480px) {
+      width: 480px;
+    }
+    @media screen and (min-width: 768px) {
+    }
+    @media screen and (min-width: 1200px) {
+      width: 1200px;
+    }
+  }
+ 
+.photo {
+display: block;
 
   @media screen and (min-width: 480px) {
     width: 450px;
-    margin: 0;
   }
   @media screen and (min-width: 768px) {
-    width: 768px;
   }
   @media screen and (min-width: 1200px) {
-    width: 1200px;
+    width: 270px; 
   }
-}
-.photo {
-  display: block;
 }
 ul {
   padding: 0 0;
@@ -77,9 +86,16 @@ button {
 }
 
 .case {
-  display: flex;
-  flex-wrap: wrap;
   align-items: center;
+
+  @media screen and (min-width: 480px) {
+  }
+  @media screen and (min-width: 768px) {
+  }
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    flex-wrap: wrap;
+  }
 }
 
 .button {

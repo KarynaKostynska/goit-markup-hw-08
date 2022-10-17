@@ -42,13 +42,7 @@ body {
 }
 @media screen and (min-width: 480px) {
   .container {
-    width: 450px;
-    margin: 0;
-  }
-}
-@media screen and (min-width: 768px) {
-  .container {
-    width: 768px;
+    width: 480px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -59,6 +53,16 @@ body {
 
 .photo {
   display: block;
+}
+@media screen and (min-width: 480px) {
+  .photo {
+    width: 450px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .photo {
+    width: 270px;
+  }
 }
 
 ul {
@@ -79,14 +83,18 @@ button {
 }
 
 .case {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+@media screen and (min-width: 1200px) {
+  .case {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
 }
 
 .button {
@@ -350,6 +358,11 @@ button {
   fill: var(--maintext);
   -webkit-transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+@media screen and (min-width: 480px) {
+  .contact__icon {
+    display: none;
+  }
 }
 .contact__mail:hover .contact__icon, .contact__mail:focus .contact__icon {
   fill: var(--accents);
@@ -629,13 +642,15 @@ button {
 .benefit {
   padding: 94px 0 0 0;
 }
-.benefit__list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  margin-right: -30px;
+@media screen and (min-width: 1200px) {
+  .benefit__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    margin-right: -30px;
+  }
 }
 .benefit__bgc {
   display: -webkit-box;
@@ -762,12 +777,24 @@ button {
 }
 
 .team {
-  padding: 94px 0 94px 0;
   background-color: var(--bgr);
 }
+@media screen and (min-width: 1200px) {
+  .team {
+    padding: 94px 0 94px 0;
+  }
+}
+.team__photo {
+  width: 450px;
+}
 @media screen and (min-width: 480px) {
-  .team__team__photo {
+  .team__photo {
     width: 450px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .team__photo {
+    width: 270px;
   }
 }
 .team__subtitle {
@@ -799,6 +826,17 @@ button {
   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
+}
+@media screen and (min-width: 480px) {
+  .team__item {
+    width: 450px;
+    margin-bottom: 30px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .team__item {
+    width: 270px;
+  }
 }
 @media screen and (min-width: 1200px) {
   .team__item:not(:last-child) {
@@ -854,17 +892,32 @@ button {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
 }
-
-.client__item {
-  width: 170px;
-  height: 92px;
+@media screen and (min-width: 480px) {
+  .client__item {
+    width: 210px;
+    height: 92px;
+  }
+  .client__item:nth-child(-n+4) {
+    margin-bottom: 30px;
+  }
+  .client__item:nth-child(2n+1) {
+    margin-right: 30px;
+  }
 }
-.client__item:not(:last-child) {
-  margin-right: 30px;
+@media screen and (min-width: 1200px) {
+  .client__item {
+    width: 170px;
+    height: 92px;
+  }
+  .client__item:not(:last-child) {
+    margin-right: 30px;
+  }
 }
 
 .client__link {
@@ -1052,20 +1105,31 @@ button {
 
 /* Підвал */
 .footer {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   background-color: var(--bgr-black);
   padding-top: 60px;
   padding-bottom: 60px;
 }
-.footer__box {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: baseline;
-      -ms-flex-align: baseline;
-          align-items: baseline;
+@media screen and (min-width: 1200px) {
+  .footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+@media screen and (min-width: 480px) {
+  .footer__box {
+    text-align: center;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .footer__box {
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
 }
 .footer__link {
   font-style: normal;
@@ -1095,54 +1159,85 @@ button {
 }
 
 /* Приєднуйтесь */
-.social {
-  margin-left: 70px;
-  margin-right: 93px;
+@media screen and (min-width: 480px) {
+  .social {
+    margin-top: 60px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .social {
+    margin-left: 70px;
+    margin-right: 93px;
+  }
 }
 .social__follow {
   font-weight: 700;
   font-size: 14px;
   letter-spacing: 0.03em;
   color: var(--white);
+  margin-top: 0;
+  margin-bottom: 30px;
 }
 .social__list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-top: 20px;
+}
+@media screen and (min-width: 480px) {
+  .social__list {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .social__list {
+    margin-top: 20px;
+  }
 }
 .social__icon {
   fill: var(--white);
 }
 
 .social__item {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   width: 44px;
   height: 44px;
   margin: 0 10px 0 0;
+}
+@media screen and (min-width: 1200px) {
+  .social__item {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
 }
 .social__item:last-child {
   margin-right: 0;
 }
 
 .social__link {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  width: 100%;
-  height: 100%;
+  width: 44px;
+  height: 44px;
   border-radius: 50%;
   background: rgba(255, 255, 255, 0.1);
   -webkit-transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+@media screen and (min-width: 1200px) {
+  .social__link {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
 }
 .social__link:focus, .social__link:hover {
   background-color: var(--accents);
@@ -1157,21 +1252,17 @@ button {
   letter-spacing: 0.03em;
   color: var(--white);
 }
-.sign-up__form {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+@media screen and (min-width: 1200px) {
+  .sign-up__form {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
 }
 .sign-up__frame {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  width: 358px;
+  width: 450px;
   height: 50px;
   background-color: #2f303a;
   padding: 15px;
@@ -1185,12 +1276,24 @@ button {
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
 }
+@media screen and (min-width: 480px) {
+  .sign-up {
+    width: 450px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .sign-up {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 358px;
+  }
+}
 
 .sign-up__button {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  margin-left: 12px;
   padding: 10px 28px;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
@@ -1198,6 +1301,24 @@ button {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+@media screen and (min-width: 480px) {
+  .sign-up__button {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .sign-up__button {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-left: 12px;
+  }
 }
 .sign-up__button::after {
   content: "";

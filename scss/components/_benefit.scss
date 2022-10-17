@@ -4,9 +4,18 @@
   padding: 94px 0 0 0;
 
   &__list {
-    display: flex;
-    flex-wrap: wrap;
-    margin-right: -30px;
+   
+   
+
+    @media screen and (min-width: 480px) {
+    }
+    @media screen and (min-width: 768px) {
+    }
+    @media screen and (min-width: 1200px) {
+      display: flex;
+      flex-wrap: wrap;
+      margin-right: -30px;
+    }
   }
   &__bgc {
     display: flex;
