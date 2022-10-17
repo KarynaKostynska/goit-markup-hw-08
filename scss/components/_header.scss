@@ -1,51 +1,162 @@
 .header {
-    border-bottom: 1px solid #ececec;
+  position: relative;
+  border-bottom: 1px solid #ececec;
 }
 
 .logo {
-margin-right: 93px;
-padding-top: 24px;
-padding-bottom: 25px;
+  font-family: "Raleway", cursive;
+  font-weight: 700;
+  line-height: 1.2;
+  color: var(--accents);
+  padding: 16px 0;
+  font-size: 24px;
+  line-height: 1.1;
 
-font-family: "Raleway", cursive;
-font-weight: 700;
-font-size: 26px;
-color: var(--accents);
+    @media screen and (min-width: 1200px) {
+      font-size: 26px;
+      line-height: 1.2;
+      margin-right: 93px;
+      padding-top: 24px;
+      padding-bottom: 25px;
+    }
 
-&-part {
-    color: var(--headlines);
+    &-part {
+      color: var(--headlines);
+      font-weight: 400;
+  
   }
 }
 
-
 /* Навігація */
+.header__button {
+  display: inline-flex;
+  margin: 0;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+}
+
+.header__icon-close {
+display: none;
+}
+
+.header__button.is-open .header__icon-close {
+  display: block;
+}
+
+.header__button.is-open .header__icon-menu {
+  display: none;
+}
+
 .nav {
-&__list {
+ 
+  background-color: #fff;
+
+  @media screen and (max-width: 480px) {
+    position: absolute;
+    display: none;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    height: 796px;
+    width: 480px;
+    padding-top: 48px;
+    padding-left: 40px;
+  }
+  @media screen and (min-width: 768px) {
+  }
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    flex-wrap: wrap;
+    width: 1200px;
+  }
+
+&.is-open {
+  display: block;
+}
+
+  &__list {
+
+  
+    @media screen and (min-width: px) {
+    }
+  
+    @media screen and (min-width: 1200px) {
     display: flex;
     padding-left: 0;
-    margin: 0 0; }
-&__item {
+    margin: 0 0;
+    }
+  }
+  &__item {
+
+    @media screen and (min-width: 480px) {
+    }
+
+    @media screen and (min-width: 768px) {
+    }
+
+    @media screen and (min-width: 1200px) {
     display: block;
     padding-top: 32px;
     padding-bottom: 32px;
+    }
   }
-&__item:not(:last-child) {
-    margin-right: 50px;
+  &__item:not(:last-child) {
+   
+    margin-bottom: 35px;
+
+    @media screen and (min-width: 480px) {
+    }
+    @media screen and (min-width: 768px) {
+    }
+    @media screen and (min-width: 1200px) {
+      margin-right: 50px;
+    }
   }
-&__link {
+  &__link {
+    
     font-weight: 500;
-    font-size: 14px;
+    font-size: 40px;
+    line-height: 1.17;
     letter-spacing: 0.02em;
     color: var(--title);
-    padding-top: 32px;
-    padding-bottom: 32px;
+   
+
+    @media screen and (min-width: 480px) {
+    }
+    @media screen and (min-width: 768px) {
+    }
+    @media screen and (min-width: 1200px) {
+      font-size: 14px;
+      padding-top: 32px;
+      padding-bottom: 32px;
+    }
+  }
+
+}
+.current {
+  position: relative;
+  color: var(--accents);
+
+  @media screen and (min-width: 480px) {
+  }
+  @media screen and (min-width: 768px) {
+  }
+  @media screen and (min-width: 1200px) {
   }
 }
-  .current {
-    position: relative;
-    color: var(--accents);
+.current::after {
+
+
+  @media screen and (min-width: 480px) {
   }
-  .current::after {
+  @media screen and (min-width: 768px) {
+  }
+  @media screen and (min-width: 1200px) {
     content: "";
     position: absolute;
     left: -3px;
@@ -57,48 +168,116 @@ color: var(--accents);
     background: var(--accents);
     border-radius: 2px;
   }
+}
 
-  /* Контакти */
+/* Контакти */
 
 .contact {
+ 
+
+  @media screen and (min-width: 480px) {
+  }
+  @media screen and (min-width: 768px) {
+  }
+  @media screen and (min-width: 1200px) {
     display: flex;
-    /* padding-left: 0; */
+    padding-left: 0; 
     margin-left: auto;
     margin-top: 0px;
     margin-bottom: 0px;
-
-&__list:not(:last-child) {
-        margin-right: 50px;
-      }
-&__mail,
-&__tel {
-        display: flex;
-        align-items: center;
-        font-weight: 500;
-        font-size: 14px;
-        letter-spacing: 0.02em;
-        color: var(--maintext);
-        padding-top: 32px;
-        padding-bottom: 32px;
-      }
   }
-  
-  
-.contact__icon {
-    display: block;
-    align-items: center;
-    margin-right: 10px;
-    fill: var(--maintext);
-    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
-    .contact__mail:hover &, 
-    .contact__mail:focus & {
-        fill: var(--accents);
-      }
-      
-      .contact__tel:hover &, 
-      .contact__tel:focus & {
-        fill: var(--accents);
-      }
+  &__list:not(:last-child) {
+    margin-right: 50px;
+
+    @media screen and (min-width: 480px) {
+    }
+    @media screen and (min-width: 768px) {
+    }
+    @media screen and (min-width: 1200px) {
+    }
+  }
+  &__mail {
+    display: flex;
+    align-items: center;
+    font-weight: 500;
+    font-size: 34px;
+    letter-spacing: 0.02em;
+    color: var(--maintext);
+    padding-top: 32px;
+    padding-bottom: 32px;
+   
+    line-height: 40px;
+    letter-spacing: 0.02em;
+
+    @media screen and (min-width: 480px) {
+    }
+    @media screen and (min-width: 768px) {
+    }
+    @media screen and (min-width: 1200px) {
+      font-size: 14px;
+    }
+  }
+
+  &__tel {
+    display: flex;
+    align-items: center;
+    font-weight: 500;
+    font-size: 34px;
+    letter-spacing: 0.02em;
+    color: var(--maintext);
+    padding-top: 32px;
+    padding-bottom: 32px;
+   
+    line-height: 40px;
+    letter-spacing: 0.02em;
+
+    @media screen and (min-width: 480px) {
+    }
+    @media screen and (min-width: 768px) {
+    }
+    @media screen and (min-width: 1200px) {
+      font-size: 14px;
+    }
+  }
+
 }
-  
+
+.contact__icon {
+  display: block;
+  align-items: center;
+  margin-right: 10px;
+  fill: var(--maintext);
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  @media screen and (min-width: 480px) {
+  }
+  @media screen and (min-width: 768px) {
+  }
+  @media screen and (min-width: 1200px) {
+  }
+
+  .contact__mail:hover &,
+  .contact__mail:focus & {
+    fill: var(--accents);
+
+    @media screen and (min-width: 480px) {
+    }
+    @media screen and (min-width: 768px) {
+    }
+    @media screen and (min-width: 1200px) {
+    }
+  }
+
+  .contact__tel:hover &,
+  .contact__tel:focus & {
+    fill: var(--accents);
+
+    @media screen and (min-width: 480px) {
+    }
+    @media screen and (min-width: 768px) {
+    }
+    @media screen and (min-width: 1200px) {
+    }
+  }
+}

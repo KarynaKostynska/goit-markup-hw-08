@@ -1,6 +1,14 @@
 .activity {
   padding: 94px 0 94px 0;
   margin: 0 0;
+  @media screen and (min-width: 480px) {
+    display: none;
+  }
+  @media screen and (min-width: 768px) {
+  }
+  @media screen and (min-width: 1200px) {
+    display: block;
+  }
 
   &__list {
     display: flex;

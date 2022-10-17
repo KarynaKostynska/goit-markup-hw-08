@@ -2,6 +2,7 @@
 <html lang="uk">
   <head>
     <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>WebStudio</title>
@@ -27,7 +28,18 @@
         <a class="logo" href="./index.html"
           >Web<span class="logo-part">Studio</span></a
         >
-        <nav class="nav">
+
+        <button class="header__button is-open" type="button"
+        aria-expanded="false"
+        data-menu-button>
+          <svg width="40px" height="40px" aria-label="Перемикач мобільного меню">
+            <use class="header__icon-menu" href="./images/icons.svg#icon-menu_40px"></use>
+            <use class="header__icon-close" href="./images/icons.svg#icon-close_40px"></use>
+          </svg>
+        </button>
+
+        <nav class="nav is-open"
+        data-menu>
           <ul class="nav__list">
             <li class="nav__item ">
               <a class="current activ-element nav__link" href="./index.html"
@@ -43,29 +55,30 @@
               <a class="activ-element nav__link" href="">Контакти</a>
             </li>
           </ul>
+          <ul class="contact">
+            <li class="contact__list">
+              <a
+                class="activ-element contact__mail"
+                href="mailto:info@devstudio.com"
+                lang="en"
+              >
+                <svg class="contact__icon" width="16" height="12">
+                  <use href="./images/icons.svg#icon-envelope"></use>
+                </svg>
+                info@devstudio.com</a
+              >
+            </li>
+            <li class="contact__list">
+              <a class="activ-element contact__tel" href="tel:+380961111111">
+                <svg class="contact__icon" width="10" height="16">
+                  <use href="./images/icons.svg#icon-telefon"></use>
+                </svg>
+                +38 096 111 11 11</a
+              >
+            </li>
+          </ul>
         </nav>
-        <ul class="contact">
-          <li class="contact__list">
-            <a
-              class="activ-element contact__mail"
-              href="mailto:info@devstudio.com"
-              lang="en"
-            >
-              <svg class="contact__icon" width="16" height="12">
-                <use href="./images/icons.svg#icon-envelope"></use>
-              </svg>
-              info@devstudio.com</a
-            >
-          </li>
-          <li class="contact__list">
-            <a class="activ-element contact__tel" href="tel:+380961111111">
-              <svg class="contact__icon" width="10" height="16">
-                <use href="./images/icons.svg#icon-telefon"></use>
-              </svg>
-              +38 096 111 11 11</a
-            >
-          </li>
-        </ul>
+        
       </div>
     </header>
     <main>
@@ -145,7 +158,7 @@
             <li class="activity__item">
               <img
                 class="photo"
-                src="./images/img.jpg"
+                src="./images/activ/img.jpg"
                 alt="Написання коду"
                 width="370"
               />
@@ -154,7 +167,7 @@
             <li class="activity__item">
               <img
                 class="photo"
-                src="./images/img-2.jpg"
+                src="./images/activ/img-2.jpg"
                 alt="Тестування"
                 width="370"
               />
@@ -163,7 +176,7 @@
             <li class="activity__item">
               <img
                 class="photo"
-                src="./images/img-3.jpg"
+                src="./images/activ/img-3.jpg"
                 alt="Веб-Дизайн"
                 width="370"
               />
@@ -180,7 +193,8 @@
             <li class="team__item">
               <img
                 class="photo"
-                src="./images/colleag1.jpg"
+                srcset="./images/team/colleag1@1x.jpg 1x 450w, ./images/team/colleag1@2x.jpg 2x 450w"
+                src="./images/team/colleag1.jpg"
                 alt="Фото Ігор Дем'яненко"
                 width="270"
               />
@@ -220,7 +234,8 @@
             <li class="team__item">
               <img
                 class="photo"
-                src="./images/colleag2.jpg"
+                srcset="./images/team/colleag2@1x.jpg 1x 450w, ./images/team/colleag2@2x.jpg 2x 450w"
+                src="./images/team/colleag2.jpg"
                 alt="Фото Ольга Рєпіна"
                 width="270"
               />
@@ -260,7 +275,8 @@
             <li class="team__item"> 
               <img
                 class="photo"
-                src="./images/colleag3.jpg"
+                srcset="./images/team/colleag3@1x.jpg 1x 450w, ./images/team/colleag3@2x.jpg 2x 450w"
+                src="./images/team/colleag3.jpg"
                 alt="Фото Микола Тарасов"
                 width="270"
               />
@@ -299,8 +315,9 @@
             </li>
             <li class="team__item">
               <img
-                class="photo"
-                src="./images/colleag4.jpg"
+                class="photo team__photo"
+                srcset="/images/team/colleag4@1x.jpg 1x 450w, /images/team/colleag4@2x.jpg 2x 450w"
+                src="./images/team/colleag4.jpg"
                 alt="Фото Михайло Єрмаков"
                 width="270"
               />
@@ -540,6 +557,7 @@
       </div>
 
       <script src="./js/modal.js"></script>
+      <script src="./js/mobile-menu.js"></script>
     </footer>
   </body>
 </html>
