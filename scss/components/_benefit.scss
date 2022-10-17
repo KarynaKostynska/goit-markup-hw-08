@@ -1,8 +1,16 @@
 /* Переваги */
 
 .benefit {
-  padding: 94px 0 0 0;
+  
 
+  @media screen and (min-width: 480px) {
+    padding: 60px 0;
+  }
+  @media screen and (min-width: 768px) {
+  }
+  @media screen and (min-width: 1200px) {
+    padding: 94px 0 0 0;
+  }
   &__list {
    
    
@@ -46,13 +54,7 @@
     margin: 0 0;
     color: var(--maintext);
 
-    @media screen and (min-width: 480px) {
-      margin-bottom: 30px;
-    }
-    @media screen and (min-width: 768px) {
-    }
-    @media screen and (min-width: 1200px) {
-    }
+    
   }
   
 }
@@ -60,7 +62,7 @@
 .benefit__item {
 
   @media screen and (min-width: 480px) {
-margin-bottom: 10px;
+margin-bottom: 30px;
   }
   @media screen and (min-width: 768px) {
   }
