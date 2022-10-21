@@ -17,10 +17,15 @@
     text-align: center;
 
     @media screen and (min-width: 768px) {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: baseline;
     }
     @media screen and (min-width: 1200px) {
       align-items: baseline;
       display: flex;
+      text-align: start;
     }
   }
 
@@ -30,6 +35,18 @@
     font-size: 14px;
     line-height: 1.71;
     color: rgba(255, 255, 255, 0.6);
+  }
+}
+
+// Інфо
+
+.footer__info {
+ 
+  @media screen and (min-width: 768px) {
+  margin-right: 165px;
+  }
+  @media screen and (min-width: 1200px) {
+  margin-right: 70px;  
   }
 }
 
@@ -59,13 +76,12 @@
 /* Приєднуйтесь */
 
 .social {
-  margin-top: 60px;
-  margin-bottom: 60px;
-
-  @media screen and (min-width: 768px) {
+  
+  @media screen and (max-width: 767px) {
+    margin-top: 60px;
+    margin-bottom: 60px; 
   }
   @media screen and (min-width: 1200px) {
-    margin-left: 70px;
     margin-right: 93px;
   }
 
@@ -143,6 +159,20 @@
 /* Підписатися */
 
 .sign-up {
+ 
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+    width: 450px;
+    margin-top: 60px;
+    justify-content: center;
+  }
+  @media screen and (min-width: 1200px) {
+  width: 570px;
+  margin: 0;
+  justify-content: start;
+  }
+
   &__title {
     display: block;
     margin-bottom: 20px;
@@ -178,6 +208,7 @@
     margin-bottom: 20px;
    
     @media screen and (min-width: 768px) {
+      width: 450px;
     }
     @media screen and (min-width: 1200px) {
       display: flex;
@@ -195,10 +226,12 @@
   align-items: center;
 
   @media screen and (min-width: 768px) {
+    width: 200px;
   }
   @media screen and (min-width: 1200px) {
     display: flex;
     margin-left: 12px;
+    height: 50px;
   }
 
   &::after {
