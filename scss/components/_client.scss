@@ -14,31 +14,24 @@
   &__list {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
-    @media screen and (min-width: 480px) {
-    }
-    @media screen and (min-width: 768px) {
-    }
-    @media screen and (min-width: 1200px) {
-    }
+    gap: 30px;
   }
 }
 
 .client__item {
   display: flex;
-  flex-wrap: wrap;
-   gap: 30px;
+ 
    justify-content: center; 
    flex-basis: calc((100% - 2 * 15px) / 2);
    height: 92px;
-  margin-bottom: 15px;
-  margin-right: 15px;
  
   @media screen and (min-width: 768px) {
     flex-basis: calc((100% - 2 * 30px) / 3);
   }
   @media screen and (min-width: 1200px) {
     flex-basis: calc((100% - 5 * 30px) / 6);
+    margin-bottom: 0;
+
   }
 }
 

@@ -17,15 +17,21 @@
     text-align: center;
 
     @media screen and (min-width: 768px) {
+      text-align: center;
       display: flex;
       flex-wrap: wrap;
-      justify-content: center;
+      
       align-items: baseline;
+    }
+    @media screen and (max-width: 1199px) {
+      justify-content: center;
     }
     @media screen and (min-width: 1200px) {
       align-items: baseline;
       display: flex;
       text-align: start;
+      
+
     }
   }
 
@@ -82,7 +88,7 @@
     margin-bottom: 60px; 
   }
   @media screen and (min-width: 1200px) {
-    margin-right: 93px;
+    margin-right: auto;
   }
 
   &__follow {
@@ -96,7 +102,7 @@
     @media screen and (min-width: 768px) {
     }
     @media screen and (min-width: 1200px) {
-      margin-bottom: 30px;
+      margin-bottom: 20px;
     }
   }
 
@@ -109,7 +115,7 @@
     @media screen and (min-width: 768px) {
     }
     @media screen and (min-width: 1200px) {
-      margin-top: 20px;
+      
     }
   }
 
@@ -214,6 +220,7 @@
       display: flex;
       align-items: center;
       width: 358px;
+      margin-bottom: 0;
     }
   }
 
